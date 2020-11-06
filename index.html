@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rotating Drop Down Menu Demo</title>
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  margin: 0;
+  background: #FFD966;
+  text-align: center;
+}
+
+#menu-wrapper {
+  position: relative;
+  display: block;
+  z-index: 2;
+  height: 60px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#535557), to(#333532));
+  background-image: -webkit-linear-gradient(top, #535557, #333532);
+  background-image: -moz-linear-gradient(top, #535557, #333532);
+  background-image: -ms-linear-gradient(top, #535557, #333532);
+  background-image: -o-linear-gradient(top, #535557, #333532);
+  background-image: linear-gradient(to bottom, #535557, #333532);
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.menu {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 870px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 16px 10px 25px 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menu a,
+.menu a:visited {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#submenu-wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+  width: 850px;
+  height: 136px;
+  margin: -11px auto 0;
+  padding: 10px 10px;
+  background: rgba(33,37,37,0.9);
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.submenu {
+  display: block;
+  margin: 1em 0 1.5em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.submenu li {
+  display: inline-block;
+  width: 210px;
+  vertical-align: top;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.submenu li img {
+  display: block;
+  margin: 0 auto 1em;
+  width: 200px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.submenu li a,
+.submenu li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+</style>
+    </head>
+
+    <body>
+<div id="menu-wrapper">
+      <ul class="menu">
+    <li> <a href="#">Home</a> </li>
+    <li> <a href="#">Categories</a> </li>
+    <li> <a href="#">Blog</a> </li>
+    <li> <a href="#">Contact</a> </li>
+  </ul>
+    </div>
+<div id="submenu-wrapper">
+      <ul class="submenu">
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+  </ul>
+      <ul class="submenu">
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110"/> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110"/> Sub menu </a> </li>
+  </ul>
+      <ul class="submenu">
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110"/> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+  </ul>
+      <ul class="submenu">
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110" /> Sub menu </a> </li>
+    <li> <a href="#"> <img src="http://placehold.it/250x110"/> Sub menu </a> </li>
+  </ul>
+    </div>
+    <h1 style="margin-top:30px" align="center">Rotating Drop Down Menu Demo</h1>
+    <div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(document).ready(function() {
+  $('#submenu-wrapper').hide();
+	/* Assign Variables*/
+	menu				= $('.menu li');
+	submenuWrapper	= $('#submenu-wrapper'); 
+	submenu			= submenuWrapper.children('ul');
+	firstSubmenu 	= submenu.eq(0);
+	
+	/* menu on hover */
+	menu.hover(
+		function() {
+			$('#submenu-wrapper').show();
+			moveTo = $(this).index() * 11;
+			showsubmenu(submenuWrapper);
+			firstSubmenu.stop().animate({'marginTop' : '-'+moveTo+'em' });
+		},
+		
+		function() { hidesubmenu(submenuWrapper); });
+	
+	/* sub menu hover */
+	submenuWrapper.hover(
+		function() { showsubmenu($(this)); },
+		function() { hidesubmenu($(this));
+	});
+	
+	/*Focus effect on selected child list item */
+	submenu
+		.children('li')
+		.hover(	function() { $(this).siblings().stop().animate({'opacity':'0.5'}); }, 
+					function() { $(this).siblings().stop().animate({'opacity':'1'}); });
+	
+	/* Focus effect on selected parent list item */
+	submenu
+		.hover(	function() { menu.eq($(this).index()).addClass('selected')  },
+					function() { menu.eq($(this).index()).removeClass('selected') });
+	
+	/* Function to show sub menu */
+	function showsubmenu(item) {
+		if(!item.hasClass('show'))
+			item.addClass('show').stop().animate({'marginTop' : '0'});
+	}
+	
+	/* Function to hide sub menu */
+	function hidesubmenu(item) {
+		item.removeClass('show').stop().animate({'marginTop' : '-12em'});
+	}
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
